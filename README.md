@@ -20,7 +20,7 @@ Edit the `download.sh` script with the signed url provided in the email to downl
 ### Inference
 The provided `example.py` can be run on a single or multi-gpu node with `torchrun` and will output completions for two pre-defined prompts. Using `TARGET_FOLDER` as defined in `download.sh`:
 ```
-torchrun --nproc_per_node MP example.py --ckpt_dir $TARGET_FOLDER/model_size --tokenizer_path $TARGET_FOLDER/tokenizer.model
+python example.py
 ```
 
 Different models require different MP values:
